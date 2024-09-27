@@ -36,6 +36,7 @@ public class BuddyInfo {
         AddressBook newAddyBook = new AddressBook();
         // Create a BuddyInfo object
         BuddyInfo buddy = new BuddyInfo("Homer", "742 Evergreen Terrace", "555-1234");
+        BuddyInfo buddy2 = new BuddyInfo("Homer2", "7422 Evergreen Terrace2", "525-1234");
 
 
         newAddyBook.addBuddy(buddy);
@@ -43,6 +44,11 @@ public class BuddyInfo {
 
         newAddyBook.removeBuddy(buddy);
         newAddyBook.displayBuddies();
+
+        newAddyBook.addBuddy(buddy2);
+        newAddyBook.displayBuddies();
+
+
 
     }
 }
